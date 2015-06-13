@@ -1,0 +1,16 @@
+.sass-cache
+.DS_Store
+public/css/*.css
+public/css
+public/js/*.js
+public/js/*
+public/fonts/
+public/mockAjax
+bower_components
+node_modules
+node_modules/*
+
+npm-debug.log
+
+# WebStore specific data
+.idea/
