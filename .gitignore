@@ -5,7 +5,6 @@ public/css
 public/js/*.js
 public/js/*
 public/fonts/
-public/mockAjax
 bower_components
 node_modules
 node_modules/*
