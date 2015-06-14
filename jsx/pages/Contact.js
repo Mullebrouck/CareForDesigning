@@ -2,6 +2,7 @@
 
 var React = require('react');
 var Island = require('../components/Island');
+var Footer = require('../components/Footer');
 
 var Contact = React.createClass({
     render: function () {
@@ -41,6 +42,7 @@ var Contact = React.createClass({
                     </a>
                   </div>
                 </Island>
+                <Footer />
             </div>
         );
     }

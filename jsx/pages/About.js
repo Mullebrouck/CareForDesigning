@@ -2,6 +2,7 @@
 
 var React = require('react');
 var Island = require('../components/Island');
+var Footer = require('../components/Footer');
 
 var About = React.createClass({
     render: function () {
@@ -22,6 +23,7 @@ var About = React.createClass({
                   <a className="about-button" target="_blank"
                     href="/resume/KaatjeMullebrouck.pdf"> Resume </a>
                 </Island>
+                <Footer />
             </div>
         );
     }
