@@ -1,8 +1,8 @@
 'use strict';
 
 var React = require('react');
-var Home = require('./Home');
-var About = require('./About');
+var Home = require('./pages/Home');
+var About = require('./pages/About');
 
 var Index = React.createClass({
     render: function () {

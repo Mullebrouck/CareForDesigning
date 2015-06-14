@@ -1,7 +1,7 @@
 'use strict';
 
 var React = require('react');
-var NavigationBar = require('./NavigationBar');
+var NavigationBar = require('../components/NavigationBar');
 
 var About = React.createClass({
     render: function () {
