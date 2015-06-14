@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', router);
 
 router.get('/', function(req, res) {
-    res.render('index', { title: 'Kaatje Design' });
+    res.render('index', { title: 'Kaatje Mullebrouck' });
 });
 
 // catch 404 and forward to error handler
