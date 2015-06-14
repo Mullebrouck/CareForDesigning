@@ -8,6 +8,7 @@ public/fonts/
 bower_components
 node_modules
 node_modules/*
+macaw
 
 npm-debug.log
 
