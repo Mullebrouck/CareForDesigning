@@ -10,7 +10,7 @@ var NavigationBar = React.createClass({
             home: this.props.index === 0 ? ' is-selected' : '',
             about: this.props.index === 1 ? ' is-selected' : '',
             portfolio: this.props.index === 2 ? ' is-selected' : '',
-            contact: this.props.index === 3 ? ' is-selected' : '',
+            contact: this.props.index === 3 ? ' is-selected' : ''
         };
 
         return (
