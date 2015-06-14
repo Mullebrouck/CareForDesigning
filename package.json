@@ -4,7 +4,8 @@
   "description": "Kaatje Mullebrouck portfolio",
   "main": "index.js",
   "scripts": {
-    "build": "npm run lint; npm run js && npm run css && npm start",
+    "all": "npm run build && npm start",
+    "build": "npm run lint; npm run js && npm run css",
     "postinstall": "npm run build",
     "js": "NODE_ENV=production browserify -d -t reactify -g envify -g uglifyify -o public/js/bundle.js jsx/app.js",
     "css": "node-sass scss/app.scss public/css/app.css",
