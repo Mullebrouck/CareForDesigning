@@ -1,5 +1,6 @@
 'use strict';
 
+/*global document*/
 var React = require('react');
 
 var App = require('./Index');

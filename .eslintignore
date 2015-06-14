@@ -1,0 +1,8 @@
+public/css/*.css
+public/css
+public/js/*.js
+public/js/*
+npm-debug.log
+npm-shrinkwrap.json
+package.json
+README.md

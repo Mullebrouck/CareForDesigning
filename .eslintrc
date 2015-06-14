@@ -4,5 +4,10 @@
     },
     "rules": {
         "quotes": [1, "single"]
-    }
+    },
+    "ecmaFeatures": {
+        "jsx": true,
+        "modules": [2]
+    },
+    "plugins": [ "react" ]
 }
