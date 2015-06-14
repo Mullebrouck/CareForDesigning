@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "all": "npm run lint; npm run js && npm run css && npm start",
-    "build": "npm run lint; npm run js && npm run css",
+    "build": "npm run js && npm run css",
     "js": "NODE_ENV=production browserify -d -t reactify -g envify -g uglifyify -o public/js/bundle.js jsx/app.js",
     "css": "node-sass scss/app.scss public/css/app.css",
     "lint": "eslint --quiet jsx/",
