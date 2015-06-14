@@ -1,0 +1,7 @@
+{
+  "name": "CareForDesigning",
+  "description": "Kaatje Mullebrouck - portfolio",
+  "repository": "git@github.com:vasco3/CareForDesigning.git",
+  "logo": "http://fentexhaus.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"]
+}
