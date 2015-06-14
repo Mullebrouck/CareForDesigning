@@ -8,7 +8,8 @@ var About = React.createClass({
     render: function () {
         return (
             <div className="about">
-                <NavigationBar index={1} />
+                <NavigationBar index={1}
+                  onNavButtonClick={this.props.onNavButtonClick}/>
                 <Island title={"About"}/>
             </div>
         );

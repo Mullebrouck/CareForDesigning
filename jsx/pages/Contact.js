@@ -8,7 +8,8 @@ var Contact = React.createClass({
     render: function () {
         return (
             <div className="contact">
-                <NavigationBar index={3} />
+                <NavigationBar index={3}
+                  onNavButtonClick={this.props.onNavButtonClick}/>
                 <Island title={"Contact"}/>
             </div>
         );

@@ -16,13 +16,28 @@ var NavigationBar = React.createClass({
         return (
             <header className="navigationBar">
                 <div className="navigationBar-buttons">
-                    <div className={css.base + css.home}>Home</div>
-                    <div className={css.base + css.about}>About</div>
-                    <div className={css.base + css.portfolio}>Portfolio</div>
-                    <div className={css.base + css.contact}>Contact</div>
+                    <div className={css.base + css.home}
+                      onClick={this.onClick.bind(null, 0)}>
+                      Home
+                    </div>
+                    <div className={css.base + css.about}
+                      onClick={this.onClick.bind(null, 1)}>
+                      About
+                    </div>
+                    <div className={css.base + css.portfolio}
+                      onClick={this.onClick.bind(null, 2)}>
+                      Portfolio
+                    </div>
+                    <div className={css.base + css.contact}
+                      onClick={this.onClick.bind(null, 3)}>
+                      Contact
+                    </div>
                 </div>
             </header>
         );
+    },
+    onClick: function(index, e){
+      this.props.onNavButtonClick(e);
     }
 });
 

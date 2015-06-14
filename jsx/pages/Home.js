@@ -7,7 +7,8 @@ var Home = React.createClass({
     render: function () {
         return (
             <div className="home">
-                <NavigationBar index={0} />
+                <NavigationBar index={0}
+                  onNavButtonClick={this.props.onNavButtonClick}/>
             </div>
         );
     }
