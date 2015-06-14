@@ -1,3 +1,29 @@
 .gridHeader {
 
+  .gridHeader-mainRow{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: rgba(18, 18, 17, 0.58);
+    line-height: 2;
+    cursor: pointer;
+  }
+
+  .gridHeader-buttons{
+    margin: 0;
+    line-height: 2;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .gridHeader-button{
+    font-size: 14px;
+    display: inline-block;
+    padding: 0 10px;
+    &.is-selected,
+    &:hover {
+      color: rgb(215, 172, 127);
+    }
+  }
+
 }
