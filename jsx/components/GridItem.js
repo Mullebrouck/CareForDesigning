@@ -5,11 +5,18 @@ var React = require('react');
 var GridItem = React.createClass({
 
   render: function () {
-    var tags = this.props.tags.map(function (tag) {
+    var p = this.props;
+    var onClickTag = p.onClickTag;
+
+    var tags = p.tags.map(function (tag) {
       return (
-        <h6 className="gridItem-tag"># {tag}</h6>
+        <h6 className="gridItem-tag"
+            onClick={onClickTag.bind(null, tag)}>
+          # {tag}
+        </h6>
       );
     });
+
     return (
       <div className="gridItem">
         <img className="gridItem-image"

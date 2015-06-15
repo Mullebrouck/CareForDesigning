@@ -17,7 +17,8 @@ var Grid = React.createClass({
   render: function () {
     var catKey = this.state.category;
     var items,
-      iKeys;
+      iKeys,
+      onClickTag = this.onGridNavClick;
 
     if (catKey === 'all') {
       iKeys = Object.keys(GridData);
@@ -31,6 +32,7 @@ var Grid = React.createClass({
 
       return (
         <GridItem tags={tags} image={item.image}
+                  onClickTag={onClickTag}
                   name={item.name}/>
       );
     });
@@ -38,7 +40,7 @@ var Grid = React.createClass({
     return (
       <div className="grid">
         <GridHeader
-          onClick={this.onGridNavClick}
+          onClick={onClickTag}
           category={this.state.category}/>
 
         {items}
