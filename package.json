@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "all": "npm run build && npm start",
-    "build": "npm run lint; npm run js && npm run css",
-    "postinstall": "npm run build",
-    "js": "NODE_ENV=production browserify -d -t reactify -g envify -g uglifyify -o public/js/bundle.js jsx/app.js",
+    "build": "npm run lint; npm run js-dev && npm run css",
+    "postinstall": "npm run js && npm run css",
+    "js": "NODE_ENV=production browserify -t reactify -g envify -g uglifyify -o public/js/bundle.js jsx/app.js",
+    "js-dev": "NODE_ENV=production browserify -t reactify -g envify -d -o public/js/bundle.js jsx/app.js",
     "css": "node-sass scss/app.scss public/css/app.css",
     "lint": "eslint --quiet jsx/",
     "start": "node --debug app.js",
