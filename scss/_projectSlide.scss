@@ -1,14 +1,18 @@
 .projectSlide{
 
   .projectSlide-image{
-
+    width: 500px;
+    display: inline-block;
   }
 
   .projectSlide-title{
-
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 15px;
   }
 
   .projectSlide-credits{
-
+    font-weight: normal;
+    margin-top: 5px;
   }
 }

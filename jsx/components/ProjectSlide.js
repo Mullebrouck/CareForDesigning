@@ -7,10 +7,10 @@ var ProjectSlide = React.createClass({
     return (
       <div className="projectSlide">
         <img className="projectSlide-image"
-      src="images/WeddingNailArt_Edgy.png" />
-        <h3 className="projectSlide-title"> Magazine
+      src="images/Automobuild_Flyer_HB.jpg" />
+        <h3 className="projectSlide-title"> Automobuild Flyer Happy birds Event
         </h3>
-        <h6 className="projectSlide-credits"> MockUp
+        <h6 className="projectSlide-credits"> Mock Up : SparkleStock
         </h6>
       </div>
     );
