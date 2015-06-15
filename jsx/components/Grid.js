@@ -2,7 +2,8 @@
 
 var React = require('react');
 var GridHeader = require('./GridHeader');
-
+//var GridItem = require('./GridItem');
+var Project = require('./Project');
 
 var Grid = React.createClass({
   getInitialState: function() {
@@ -16,6 +17,7 @@ var Grid = React.createClass({
             <GridHeader
               onClick={this.onGridNavClick}
               index={0} />
+              <Project />
           </div>
         );
     },
