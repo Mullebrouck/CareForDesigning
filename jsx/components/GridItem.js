@@ -5,29 +5,46 @@ var React = require('react');
 var GridItem = React.createClass({
 
   render: function () {
+    var p = this.props;
+    var onClickTag = p.onClickTag;
+
+    var tags = p.tags.map(function (tag) {
+      return (
+        <h6 className="gridItem-tag"
+            onClick={onClickTag.bind(null, tag)}>
+          # {tag}
+        </h6>
+      );
+    });
+
     return (
       <div className="gridItem">
-      <img className="gridItem-image"
-      src="images/WeddingNailArt_Edgy.png" />
+        <img className="gridItem-image"
+             src={this.props.image}/>
 
-      <h5 className="gridItem-projectName"> Magazine </h5>
-      <div className="gridItem-tags">
+        <h5 className="gridItem-projectName">
+          {this.props.name}
+        </h5>
 
-      <div className="gridItem-columnLeft">
-      <h6 className="gridItem-tag"> # Advertisement </h6>
-      <h6 className="gridItem-tag"> # Logo </h6>
-      </div>
+        <div className="gridItem-tags">
+          <div className="gridItem-columnLeft">
+            {tags[0] || <br />}
+            {tags[3] || <br />}
+            {tags[6] || <br />}
+          </div>
 
-      <div className="gridItem-columnCenter">
-      <h6 className="gridItem-tag"> # Magazine </h6>
-      <h6 className="gridItem-tag"> # Package </h6>
-      </div>
+          <div className="gridItem-columnCenter">
+            {tags[1] || <br />}
+            {tags[4] || <br />}
+            {tags[7] || <br />}
+          </div>
 
-      <div className="gridItem-columnRight">
-      <h6 className="gridItem-tag"> # Projects </h6>
-      <h6 className="gridItem-tag"> # Stationary </h6>
-      </div>
-      </div>
+          <div className="gridItem-columnRight">
+            {tags[2] || <br />}
+            {tags[5] || <br />}
+            {tags[8] || <br />}
+          </div>
+        </div>
       </div>
     );
   }

@@ -3,14 +3,18 @@
 var React = require('react');
 
 var ProjectSlide = React.createClass({
-  render: function(){
+  render: function () {
     return (
       <div className="projectSlide">
         <img className="projectSlide-image"
-      src="images/Automobuild_Flyer_HB.jpg" />
-        <h3 className="projectSlide-title"> Automobuild Flyer Happy birds Event
+          src={this.props.image} />
+
+        <h3 className="projectSlide-title">
+          {this.props.title}
         </h3>
-        <h6 className="projectSlide-credits"> Mock Up : SparkleStock
+
+        <h6 className="projectSlide-credits">
+          {this.props.credits}
         </h6>
       </div>
     );

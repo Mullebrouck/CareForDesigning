@@ -1,59 +1,41 @@
 'use strict';
 
 var React = require('react');
+var CatData = require('../data/CategoriesData');
 
 var GridHeader = React.createClass({
     render: function () {
+      var p = this.props;
+      var cat = p.category;
 
         var css = {
             base: 'gridHeader-button',
-            showAll: this.props.index === 0 ? ' is-selected' : '',
-            advertisement: this.props.index === 1 ? ' is-selected' : '',
-            logo: this.props.index === 2 ? ' is-selected' : '',
-            magazine: this.props.index === 3 ? ' is-selected' : '',
-            packaging: this.props.index === 4 ? ' is-selected' : '',
-            projects: this.props.index === 5 ? ' is-selected' : '',
-            stationary: this.props.index === 6 ? ' is-selected' : '',
-            web: this.props.index === 7 ? ' is-selected' : ''
+            isSelected: ' is-selected',
+            all: cat === 'all' ? ' is-selected' : ''
         };
+      var categories = Object.keys(CatData).map(function(catKey) {
+        var classes = cat === catKey
+            ? css.base + css.isSelected
+            : css.base;
+
+        return (
+          <div className={classes}
+               onClick={p.onClick.bind(null, catKey)}>
+            {CatData[catKey].name}
+          </div>
+          );
+      });
 
         return (
             <div className="gridHeader">
                 <div className="gridHeader-mainRow">
-                    <div className={css.base + css.showAll}
-                      onClick={this.props.onClick.bind(null, 0)}>
+                    <div className={css.base + css.all}
+                      onClick={p.onClick.bind(null, 'all')}>
                       Show All Projects
                     </div>
                 </div>
                 <div className="gridHeader-buttons">
-                    <div className={css.base + css.advertisement}
-                      onClick={this.props.onClick.bind(null, 1)}>
-                      Advertisement
-                    </div>
-                    <div className={css.base + css.logo}
-                      onClick={this.props.onClick.bind(null, 2)}>
-                      Logo
-                    </div>
-                    <div className={css.base + css.magazine}
-                      onClick={this.props.onClick.bind(null, 3)}>
-                      Magazine
-                    </div>
-                    <div className={css.base + css.packaging}
-                      onClick={this.props.onClick.bind(null, 4)}>
-                      Package
-                    </div>
-                    <div className={css.base + css.projects}
-                      onClick={this.props.onClick.bind(null, 5)}>
-                      Projects
-                    </div>
-                    <div className={css.base + css.stationary}
-                      onClick={this.props.onClick.bind(null, 6)}>
-                      Stationary
-                    </div>
-                    <div className={css.base + css.web}
-                      onClick={this.props.onClick.bind(null, 7)}>
-                      Web
-                    </div>
+                  {categories}
                 </div>
             </div>
         );
