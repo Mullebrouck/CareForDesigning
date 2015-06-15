@@ -22,5 +22,20 @@ module.exports = {
         credits: 'Mockup'
       }
     ]
+  },
+  'automobuild': {
+    image: 'images/Automobuild_Flyer_HB.jpg',
+    name: 'Automobuild',
+    slides: [
+      {
+        image: 'images/Automobuild_Flyer_HB.jpg',
+        title: 'Automobuild Flyer Happy birds Event',
+        credits: 'Mock Up : SparkleStock',
+        description: 'Automobuild is a toy-store located downtown ' +
+        'Los Gatos. I designed and formatted text and graphics ' +
+        'for blog posts, newsletters, fliers, advertisement and ' +
+        'brochures.'
+      }
+    ]
   }
 };

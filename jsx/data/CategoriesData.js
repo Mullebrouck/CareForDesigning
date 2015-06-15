@@ -5,6 +5,7 @@ module.exports = {
     name: 'Advertisement',
     items: {
       'wedding': true,
+      'automobuild': true,
       'atSea': true
     }
   },
