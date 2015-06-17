@@ -4,47 +4,58 @@ module.exports = {
   advertisement: {
     name: 'Advertisement',
     items: {
-      'wedding': true,
       'automobuild': true,
       'atSea': true
     }
   },
+
   logo: {
     name: 'Logo',
     items: {
-      'wedding': true,
       'atSea': true
     }
   },
+
   magazine: {
     name: 'Magazine',
     items: {
-      'atSea': true
+      'wedding': true,
+      'atSea': true,
+      'articles': true
     }
   },
+
   packaging: {
     name: 'Package',
     items: {
-      'atSea': true
+      'atSea': true,
+      'whiteRice': true
     }
   },
+
   projects: {
     name: 'Projects',
     items: {
-      'wedding': true
+      'atSea': true,
+      'mvla': true,
+      'milow': true,
+      'whiteRice': true,
+      'posters': true
     }
   },
+
   stationary: {
     name: 'Stationary',
     items: {
-      'wedding': true,
-      'atSea': true
+      'atSea': true,
+      'businessCards': true,
+      'sweetBelly': true
     }
   },
+
   web: {
     name: 'Web',
     items: {
-      'wedding': true,
       'atSea': true
     }
   }

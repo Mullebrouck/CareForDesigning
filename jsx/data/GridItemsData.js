@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = {
-  'wedding': {
+  wedding: {
     image: 'images/WeddingNailArt_Edgy.png',
-    name: 'Magazine',
+    name: 'Nail Art',
     slides: [
       {
         image: 'images/WeddingNailArt_Edgy.png',
@@ -12,9 +12,10 @@ module.exports = {
       }
     ]
   },
-  'atSea': {
-    image: 'images/WeddingNailArt_Edgy.png',
-    name: 'atSea',
+
+  atSea: {
+    image: 'images/@Sea_logo_thumbnail.jpg',
+    name: '@Sea',
     slides: [
       {
         image: 'images/WeddingNailArt_Edgy.png',
@@ -23,8 +24,9 @@ module.exports = {
       }
     ]
   },
-  'automobuild': {
-    image: 'images/Automobuild_Flyer_HB.jpg',
+
+  automobuild: {
+    image: 'images/Automobuild_thumbnail.jpg',
     name: 'Automobuild',
     slides: [
       {
@@ -37,5 +39,55 @@ module.exports = {
         'brochures.'
       }
     ]
+  },
+
+  businessCards: {
+    image: 'images/Jorge_thumbnail.jpeg',
+    name: 'Businesscards',
+    slides: [
+    ]
+  },
+
+  mvla: {
+    image: 'images/MVLA_thumbnaili.jpg',
+    name: 'MVLA',
+    slides: [
+    ]
+  },
+
+  milow: {
+    image: 'images/Milow_CD_front_thumbnail.jpg',
+    name: 'Milow',
+    slides: [
+    ]
+  },
+
+  whiteRice: {
+    image: 'images/Package_rice_thumbnail.jpg',
+    name: 'White Rice Packaging',
+    slides: [
+    ]
+  },
+
+  sweetBelly: {
+    image: 'images/SweetBelly_Stationary_Thumbnail.jpg',
+    name: 'Sweet Belly',
+    slides: [
+    ]
+  },
+
+  articles: {
+    image: 'images/Magazine_article_thumbnail.jpg',
+    name: 'Articles',
+    slides: [
+    ]
+  },
+
+  posters: {
+    image: 'images/Poster_Poo_Thumbnail-2.jpg',
+    name: 'Poster Projects',
+    slides: [
+    ]
   }
+
 };
