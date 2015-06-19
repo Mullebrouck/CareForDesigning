@@ -61,7 +61,7 @@ var Contact = React.createClass({
                     </a>
                     <a href="https://github.com/mullebrouck"
                       className="contact-gitHub" target="_blank">
-                      <img src="../images/Twitter.png" />
+                      <img src="../images/Github.png" />
                     </a>
                   </div>
                 </Island>

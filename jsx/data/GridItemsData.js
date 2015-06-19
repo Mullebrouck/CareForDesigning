@@ -2,7 +2,7 @@
 
 module.exports = {
   wedding: {
-    image: 'images/WeddingNailArt_Edgy.png',
+    image: 'images/WeddingNailArt_Edgy-Thumbnail.png',
     name: 'Nail Art',
     slides: [
       {
@@ -84,7 +84,7 @@ module.exports = {
   },
 
   posters: {
-    image: 'images/Poster_Poo_Thumbnail-2.jpg',
+    image: 'images/Poster_projects_Thumbnail.png',
     name: 'Poster Projects',
     slides: [
     ]

@@ -45,7 +45,7 @@ module.exports = {
   },
 
   stationary: {
-    name: 'Stationary',
+    name: 'Collateral',
     items: {
       'atSea': true,
       'businessCards': true,
