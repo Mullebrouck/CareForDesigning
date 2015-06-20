@@ -16,6 +16,13 @@ var ProjectSlide = React.createClass({
         <h6 className="projectSlide-credits">
           {this.props.credits}
         </h6>
+
+        {this.props.buttonLink && this.props.buttonText ? (
+            <a href={this.props.buttonLink}
+               className="projectSlide-button">
+              {this.props.buttonText}
+            </a>
+        ) : null }
       </div>
     );
   }

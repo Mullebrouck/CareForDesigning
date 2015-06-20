@@ -23,7 +23,8 @@ var GridItem = React.createClass({
              onClick={p.onClickProject}
              src={this.props.image}/>
 
-        <h5 className="gridItem-projectName">
+        <h5 className="gridItem-projectName"
+            onClick={p.onClickProject} >
           {this.props.name}
         </h5>
 

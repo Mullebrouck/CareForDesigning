@@ -1,4 +1,5 @@
 .projectSlide{
+  margin-top: 40px;
 
   .projectSlide-image{
     width: 500px;
@@ -14,5 +15,13 @@
   .projectSlide-credits{
     font-weight: normal;
     margin-top: 5px;
+  }
+  .projectSlide-button {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: rgba(215, 172, 127, 0.33);
+    padding: 8px;
+    border-radius: 4px;
   }
 }
