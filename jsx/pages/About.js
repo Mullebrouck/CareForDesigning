@@ -21,7 +21,7 @@ var About = React.createClass({
                   sunt in culpa qui officia deserunt mollit anim id est laborum.
                   </p>
                   <a className="about-button" target="_blank"
-                    href="/resume/KaatjeMullebrouck.pdf"> Resume </a>
+                    href="/resume/Resume Kaatje Mullebrouck.pdf"> Resume </a>
                 </Island>
                 <Footer />
             </div>
