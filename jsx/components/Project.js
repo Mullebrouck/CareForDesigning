@@ -5,15 +5,19 @@ var ProjectSlide = require('./ProjectSlide');
 
 var Project = React.createClass({
   render: function(){
+    var slides = this.props.slides.map(function (slide) {
+      return (
+          <ProjectSlide {...slide} />
+      );
+    });
+
     return (
       <div className="project">
-        <h1 className="project-title"> Automobuild
-        </h1>
-        <p className="project-description"> Autombuild is a toystore located
-          downtown Los Gatos. I designed and formatted text and graphics
-          for blog posts, newsletters, flyers, advertisment and brochures.
+        <h1 className="project-title">{this.props.title}</h1>
+        <p className="project-description">
+          {this.props.description}
         </p>
-        <ProjectSlide />
+        {slides}
       </div>
     );
   }
