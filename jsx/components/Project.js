@@ -14,9 +14,11 @@ var Project = React.createClass({
     return (
       <div className="project">
         <h1 className="project-title">{this.props.title}</h1>
-        <p className="project-description">
-          {this.props.description}
-        </p>
+          {this.props.description.map(function(d) {
+            return (
+              <p className="project-description">{d}</p>
+            );
+          })}
         {slides}
       </div>
     );
