@@ -18,7 +18,7 @@ var ProjectSlide = React.createClass({
         </h6>
 
         {this.props.buttonLink && this.props.buttonText ? (
-            <a href={this.props.buttonLink}
+            <a href={this.props.buttonLink} target="_blank"
                className="projectSlide-button">
               {this.props.buttonText}
             </a>
