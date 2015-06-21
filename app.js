@@ -6,6 +6,8 @@ var bodyParser = require('body-parser');
 
 var request = require('superagent');
 
+var favicon = require('serve-favicon');
+
 var postUrl = 'https://docs.google.com/forms/d/1h0yHX8FR_M_9YxfAOosdfwZXt8W-5PueZoBHuTQp0cI/formResponse';
 
 var app = express();
@@ -22,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use('/', router);
+app.use(favicon(__dirname + '/public/favicon.ico'));
 
 router.get('/', function(req, res) {
     res.render('index', { title: 'Kaatje Mullebrouck' });
