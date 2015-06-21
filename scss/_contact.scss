@@ -1,14 +1,4 @@
 .contact {
-  //background: url('../images/Stamp-Blur.jpg');
-  //position: absolute;
-  //top: 0;
-  //left: 0;
-  //right: 0;
-  //bottom: 0;
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //background-position: left center;
-  //background-attachment: fixed;
 
   .contact-information{
     text-align: left;
@@ -52,12 +42,31 @@
     width: 45px;
     position: absolute;
     left: -65px;
-    bottom: 0px;
+    bottom: 0;
 
     .contact-twitter, .contact-tumblr, .contact-linkedIn, .contact-gitHub{
       img{
         width:100%;
         height: auto;
+      }
+    }
+  }
+}
+
+@media #{$small-only} {
+  .contact {
+    .contact-socialMedia{
+      width: 100%;
+      text-align: center;
+      position: relative;
+      left: 0;
+      margin-top: 30px;
+
+      .contact-twitter, .contact-tumblr, .contact-linkedIn, .contact-gitHub{
+        max-width: 45px;
+        width: 22%;
+        display: inline-block;
+        margin: 0 2px;
       }
     }
   }

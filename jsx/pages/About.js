@@ -27,7 +27,7 @@ var About = React.createClass({
                   </p>
                   <a className="about-button" target="_blank"
                     href="/downloads/Kaatje Mullebrouck Resume.pdf"> Resume </a>
-                  <a className="portfolio-button" target="_blank"
+                  <a className="about-button" target="_blank"
                       href="/downloads/Kaatje Mullebrouck Portfolio.compressed.pdf">
                       Portfolio
                   </a>

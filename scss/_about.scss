@@ -1,22 +1,13 @@
 .about {
-  //background: url('../images/Stamp-Blur.jpg');
-  //position: absolute;
-  //top: 0;
-  //left: 0;
-  //right: 0;
-  //bottom: 0;
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //background-position: left center;
-  //background-attachment: fixed;
-
   .about-information{
     text-align: left;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
-  .about-button{
+  .about-button {
+    display: inline-block;
+    margin-bottom: 30px;
     margin-top: 30px;
     color: rgb(0,0,0);
     font-size: 14px;
@@ -25,15 +16,5 @@
     padding: 8px;
     border-radius: 4px;
     margin-right: 5px;
-  }
-
-  .portfolio-button{
-    color: black;
-    font-size: 14px;
-    text-decoration: none;
-    background-color: rgba(215, 172, 127, 0.33);
-    padding: 8px;
-    border-radius: 4px;
-    margin-left: 5px;
   }
 }
