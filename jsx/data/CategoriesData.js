@@ -44,7 +44,7 @@ module.exports = {
     }
   },
 
-  stationary: {
+  collateral: {
     name: 'Collateral',
     items: {
       'atSea': true,
