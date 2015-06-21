@@ -1,0 +1,52 @@
+$small-breakpoint:  375px;
+$medium-breakpoint: 768px;
+$large-breakpoint:  1200px;
+
+$small-range:   (0, $small-breakpoint);
+$medium-range:  ($small-breakpoint + 1, $medium-breakpoint);
+$large-range:   ($medium-breakpoint + 1, $large-breakpoint);
+
+// Media Queries
+$screen: "only screen" !default;
+
+$landscape: "#{$screen} and (orientation: landscape)" !default;
+$portrait: "#{$screen} and (orientation: portrait)" !default;
+
+// RANGES
+// We use these functions to define ranges for various things, like media queries.
+@function lower-bound($range){
+  @if length($range) <= 0 {
+    @return 0;
+  }
+  @return nth($range,1);
+}
+
+@function upper-bound($range) {
+  @if length($range) < 2 {
+    @return 999999999999;
+  }
+  @return nth($range, 2);
+}
+
+$small-up: $screen !default;
+/* 0 - 375 */
+$small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})" !default;
+
+$medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})" !default;
+/* 0 - 768 */
+$up-to-medium: "#{$screen} and (max-width:#{upper-bound($medium-range)})" !default;
+/* 376 - 768 */
+$medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})" !default;
+
+$large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})" !default;
+/* 769 - 1200 */
+$large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})" !default;
+
+/*
+@media #{$small-up} { }
+@media #{$small-only} { }
+@media #{$medium-up} { }
+@media #{$medium-only} { }
+@media #{$large-up} { }
+@media #{$large-only} { }
+*/

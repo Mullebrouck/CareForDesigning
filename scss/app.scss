@@ -1,5 +1,6 @@
 @import "normalize";
 @import "typography";
+@import "mediaQueries";
 @import "navigationBar";
 @import "home";
 @import "about";
@@ -12,3 +13,11 @@
 @import "gridItem";
 @import "project";
 @import "projectSlide";
+
+body {
+  background: url('../images/Stamp-Blur.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  background-attachment: fixed;
+}
