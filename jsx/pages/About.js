@@ -23,7 +23,7 @@ var About = React.createClass({
                   like HTML, SCSS, Java, ReactJS and Javascript.
                   </p>
                   <a className="about-button" target="_blank"
-                    href="/downloads/Kaatje Mullebrouck Resume"> Resume </a>
+                    href="/downloads/Kaatje Mullebrouck Resume.pdf"> Resume </a>
                   <a className="portfolio-button" target="_blank"
                       href="/downloads/Kaatje Mullebrouck Portfolio.compressed.pdf"> Portfolio </a>
                 </Island>
